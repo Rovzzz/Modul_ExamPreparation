@@ -1,0 +1,24 @@
+﻿<Window x:Class="ExamPreparation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExamPreparation"
+        mc:Ignorable="d"
+        Title="Секция плавания" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+
+        <Image Source="Resources/swimming.png" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        <TextBlock Style="{StaticResource TextTitle}" Grid.Row="0" Text="Секция плавания" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Grid Grid.Row="0" Background="#C6D7FF" Panel.ZIndex="-2"/>
+        <Grid Grid.Row="2" Background="#C6D7FF" />
+        <Frame NavigationUIVisibility="Hidden" Grid.Row="1" Name="MainFrame" ContentRendered="MainFrame_ContentRendered"/>
+        <Button Style="{StaticResource Button}" Content="Назад" HorizontalAlignment="Right" VerticalAlignment="Center" Name="BtnBack"/>
+    </Grid>
+    
+</Window>
