@@ -18,8 +18,20 @@
         <Style TargetType="TextBlock" x:Key="TextTitle">
             <Setter Property="FontFamily" Value="Manrope"/>
             <Setter Property="FontWeight" Value="Light"/>
-            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontSize" Value="24"/>
         </Style>
-        
+
+        <Style TargetType="TextBlock" x:Key="Text">
+            <Setter Property="FontFamily" Value="Manrope"/>
+            <Setter Property="FontWeight" Value="Light"/>
+            <Setter Property="FontSize" Value="18"/>
+        </Style>
+
+        <Style TargetType="TextBox" x:Key="TextBox">
+            <Setter Property="FontFamily" Value="Manrope"/>
+            <Setter Property="FontWeight" Value="Light"/>
+            <Setter Property="FontSize" Value="18"/>
+        </Style>
+
     </Application.Resources>
 </Application>

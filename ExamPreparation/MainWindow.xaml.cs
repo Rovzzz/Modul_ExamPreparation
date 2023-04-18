@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ExamPreparation.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,11 +24,26 @@ namespace ExamPreparation
         public MainWindow()
         {
             InitializeComponent();
+            MainFrame.Navigate(new Pages.Page_Client());
+            Manager.MainFrame = MainFrame;
+            
         }
 
         private void MainFrame_ContentRendered(object sender, EventArgs e)
         {
+            if(MainFrame.CanGoBack)
+            {
+                BtnBack.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                BtnBack.Visibility = Visibility.Hidden;
+            }
+        }
 
+        private void BtnBack_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.GoBack();
         }
     }
 }

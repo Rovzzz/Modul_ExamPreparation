@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ExamPreparation"
         mc:Ignorable="d"
-        Title="Секция плавания" Height="450" Width="800">
+        Title="Секция плавания" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="75"/>
@@ -17,8 +17,8 @@
         <TextBlock Style="{StaticResource TextTitle}" Grid.Row="0" Text="Секция плавания" VerticalAlignment="Center" HorizontalAlignment="Center"/>
         <Grid Grid.Row="0" Background="#C6D7FF" Panel.ZIndex="-2"/>
         <Grid Grid.Row="2" Background="#C6D7FF" />
-        <Frame NavigationUIVisibility="Hidden" Grid.Row="1" Name="MainFrame" ContentRendered="MainFrame_ContentRendered"/>
-        <Button Style="{StaticResource Button}" Content="Назад" HorizontalAlignment="Right" VerticalAlignment="Center" Name="BtnBack"/>
+        <Frame  NavigationUIVisibility="Hidden" Grid.Row="1" Name="MainFrame" ContentRendered="MainFrame_ContentRendered"/>
+        <Button Style="{StaticResource Button}" Content="Назад" HorizontalAlignment="Right" VerticalAlignment="Center" Name="BtnBack" Click="BtnBack_Click"/>
     </Grid>
     
 </Window>
